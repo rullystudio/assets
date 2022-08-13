@@ -1,6 +1,4 @@
 
-<script type="text/javascript">
-	
 const html5QrCode = new Html5Qrcode("reader");
 const qrCodeSuccessCallback = (decodedText, decodedResult) => {
 
@@ -22,4 +20,4 @@ html5QrCode.start({ facingMode: "environment" }, config, qrCodeSuccessCallback);
 
 // Select back camera or fail with `OverconstrainedError`.
 //html5QrCode.start({ facingMode: { exact: "environment"} }, config, qrCodeSuccessCallback);
-</script>
+
