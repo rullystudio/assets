@@ -1,22 +1,22 @@
 /*=========================
 	All css
 ==========================*/
-@import url("../plugins/bootstrap/css/bootstrap.min.css");
-@import url("../plugins/fontawesome/css/all.min.css");
-@import url("../plugins/line-awesome/css/line-awesome.min.css");
-@import url("../plugins/flaticon/custom-flaticon/flaticon.css");
-@import url("../plugins/flaticon/css/flaticon.css");
-@import url("../plugins/themify/themify-icons.css");
-@import url("../plugins/owl-carousel/owl.carousel.css");
-@import url("../plugins/bootstrap-select/bootstrap-select.min.css");
-@import url("../plugins/magnific-popup/magnific-popup.css");
-@import url("../plugins/scroll/scrollbar.css");
-@import url("../plugins/switcher/css/switcher.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/bootstrap/css/bootstrap.min.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/fontawesome/css/all.min.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/line-awesome/css/line-awesome.min.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/flaticon/custom-flaticon/flaticon.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/flaticon/css/flaticon.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/themify/themify-icons.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/owl-carousel/owl.carousel.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/bootstrap-select/bootstrap-select.min.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/magnific-popup/magnific-popup.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/scroll/scrollbar.css");
+@import url("https://github.com/rullystudio/assets/tree/main/byd/plugins/switcher/css/switcher.css");
 
 /*=========================
 	All css
 ==========================*/
-@import url('../../css');
+@import url('https://github.com/rullystudio/assets/tree/main/byd/css');
 
 /*
 font-family: 'Hind', sans-serif;
