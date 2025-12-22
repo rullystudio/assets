@@ -1,0 +1,36 @@
+<script>
+const navbarApp = {
+  data() {
+    return {
+      kategori: [],
+      user: null, // akan diisi dari localStorage
+    };
+  },
+  methods: {
+
+    // cek URL aktif
+    isActive(page) {
+      const path = window.location.pathname.split("/").pop();
+      if (page === "" && (path === "" || path === "index.html")) return "active";
+      return path.startsWith(page) ? "active" : "";
+    },
+
+    // ambil kategori dari API
+    async fetchKategori() {
+      const res = await fetch(API_URL + "kategori");
+      this.kategori = await res.json();
+    },
+
+    loadUser() {
+      const u = localStorage.getItem("user");
+      this.user = u ? JSON.parse(u) : null;
+    }
+  },
+  mounted() {
+    this.fetchKategori();
+    this.loadUser();
+  }
+};
+
+Vue.createApp(navbarApp).mount("#navbar");
+</script>
