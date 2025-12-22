@@ -1,0 +1,35 @@
+
+  <!-- Vendor JS Files -->
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="/assets/rullystudio/front/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/assets/rullystudio/front/vendor/aos/aos.js"></script>
+  <script src="/assets/rullystudio/front/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/rullystudio/front/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/rullystudio/front/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/rullystudio/front/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/assets/rullystudio/front/js/main.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+       crossorigin=""></script>
+  <script>
+      var mymap = L.map('mapid').setView([-7.658126196384902, 112.27252068112612], 13); // Ganti dengan koordinat lokasi Anda
+
+      // Menggunakan ikon bawaan
+      var myIcon = L.icon({
+          iconUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhDIGtA7TL_nmSIp6y6CFMxeOXqHcSGmWRto1hfNVdMvaj9v_02AS8OW0n-W0yPOYO-WoESwIHXFY_SesEgqGmQTSs87VmClka_GYw3R7VSq0APc_VYnInMftTZZ4gB-uComrwzL7ZkWe7aGx4Ggur2S620yyDIVGGRVrvHZGs2r6SJvUE5Dn9AYgHGvN4/w126-h126/Rully%20Studio%20Slogan.png',
+          iconSize: [40, 41],
+          iconAnchor: [12, 41],
+          popupAnchor: [1, -34],
+          shadowSize: [41, 41],
+      });
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '© OpenStreetMap contributors'
+      }).addTo(mymap);
+
+      var marker = L.marker([-7.658126196384902, 112.27252068112612], {icon: myIcon}).addTo(mymap) // Ganti dengan koordinat lokasi Anda
+          .bindPopup("<b>Rully Studio</b><br />IT System Developer.").openPopup();
+
+  </script>
